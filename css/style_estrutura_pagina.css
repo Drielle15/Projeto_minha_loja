@@ -1,0 +1,45 @@
+/*IMPORTANDO A FONTE DAS LETRAS DO google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+ 
+ /*DEFINE AS CONFIGURAÇÕES EM TODOS ELEMENTO DA PÁGINA*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Merriweather;
+}
+
+/*CRIANDO VARIÁVEIS*/
+:root{
+    --cor01: #e8ebe5b4;
+    --cor02: #076507;
+    --cor03: #ffffff;
+    --branca: #f2f2f2;
+}
+
+/*FORMATANDO A TAG main PELO ID geral*/
+#geral{
+    margin: 20px;
+}
+
+/*FORMATANDO CABEÇALHO*/
+#cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 60px;
+}
+
+/*CONFIGURANDO MENU NA HORIZONTAL*/
+#menu ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+#menu ul img{
+    width: 25px;
+    height: 25px;
+
+}
