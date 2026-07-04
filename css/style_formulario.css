@@ -1,67 +1,25 @@
-/*IMPORTANDO A FONTE DAS LETRAS DO google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-
- 
- /*DEFINE AS CONFIGURAÇÕES EM TODOS ELEMENTO DA PÁGINA*/
 
 
- *{
+
+
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Anton;
 }
 
-
-/*CRIANDO VARIÁVEIS*/
 :root{
-    --cor01: #404c5f; /* cinza escuro */
-    --cor02: #303849; /* preto */
+    --cor01: #1F2937; /* cinza escuro */
+    --cor02: #111827; /* preto */
     --cor03: #D1D5DB; /* cinza claro */
     --cor04: #DC2626; /* vermelho */
     --cor05: #F3F4F6; /* branco */
 }
 
-/*FORMATANDO A TAG main PELO ID geral*/
-#geral {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: var(--cor02);
-
-}
-
-/*FORMATANDO O CABECALHO*/
-#cabecalho {
-    background-color: var(--cor02);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px 20px;
-    height: 130px;
-    width: 100%;
-
-}
-
-/*CONFIGURANDO MENU NA HORIZONTAL*/
-#menu ul {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-}
-
-#menu ul img {
-    width: 25px;
-    height: 25px;
-}
-
-/*FORMATANDO SECTION PESQUISA*/
 #pesquisa {
     height: 100px;
-    background-color: var(--cor01);
+    background-color: var(--cor02);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,62 +29,49 @@
 #pesquisa input {
     width: 650px;
     height: 80px;
-    background-color: #f3efef;
+    background-color: var(--cor03);
     border-radius: 8px;
     padding: 10px;
     font-size: 1.4em;
     color: #f5ecec;
 }
-
 #pesquisa input::placeholder {
     font-size: 1.3em;
     font-style: italic;
-    color: #1a0a0a;
-}
-
-/*FORMATANDO OS CARDS*/
-#cards {
-    width: 1000px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    background-color: var(--cor02);
-
-
+    color:var(--cor02);
 }
 
 
-.card {
-    width: 250px;
-    min-height: 450px;
-    padding: 5px;
+#geral {
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--cor02);
-    background-color: white;
+    width: 100%;
+    background-color: var(--cor01);
+
 }
 
-.card img {
-    width: 220px;
-    height: 200px;
-    margin: 10px 0px;
+
+
+#cabecalho {
+    background-color: var(--cor03);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 20px;
+    height: 130px;
+    width: 100%;
+
 }
 
-.card p {
-    font-size: 1.1em;
-    text-transform: uppercase;
-    margin: 20px 0px;
+#menu ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
 }
 
-.card:hover {
-    transform: translateY(5px);
-}
-
-.card h2 {
-    color: var(--cor02);
-}
 
 .card button {
     width: 100%;
@@ -142,21 +87,61 @@
     cursor: pointer;
 }
 
-/*FORMATANDO RODAPE*/
+
 #rodape {
     width: 100%;
     height: 180px;
     background-color: var(--cor02);
     margin: 20px 0px;
     padding: 10px;
-    color: white;
+    color: var(--cor03);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-/*FORMATANDO LINKS*/
+
+#cadastro{
+    width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background: var(--cor02);
+    border-radius: 10px;
+}
+
+#cadastro h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#cadastro form{
+    display: flex;
+    flex-direction: column;
+}
+
+#cadastro input{
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #eeebeb;
+    border-radius: 5px;
+}
+
+#cadastro button{
+    margin-top: 20px;
+    height: 60px;
+    background: #31305c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cadastro button:hover{
+    background: #fcf3f3;
+}
+
 #menu a:link {
     font-size: 1.4em;
     text-transform: lowercase;
@@ -170,7 +155,7 @@
     text-transform: lowercase;
     letter-spacing: 2px;
     text-decoration: none;
-    color: #e4e1dc;
+    color: #f8f6f2;
 }
 
 #menu a:hover {
