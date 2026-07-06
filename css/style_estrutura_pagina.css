@@ -1,5 +1,7 @@
 /*IMPORTANDO A FONTE DAS LETRAS DO google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
 
  
  /*DEFINE AS CONFIGURAÇÕES EM TODOS ELEMENTO DA PÁGINA*/
@@ -9,7 +11,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Anton;
+    font-family:  Libre Baskerville;
 }
 
 
