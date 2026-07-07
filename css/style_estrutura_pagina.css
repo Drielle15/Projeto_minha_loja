@@ -17,7 +17,7 @@
 
 /*CRIANDO VARIÁVEIS*/
 :root{
-    --cor01: #404c5f; /* cinza escuro */
+    --cor01: #303849; /* cinza escuro */
     --cor02: #303849; /* preto */
     --cor03: #D1D5DB; /* cinza claro */
     --cor04: #DC2626; /* vermelho */
@@ -38,13 +38,14 @@
 
 /*FORMATANDO O CABECALHO*/
 #cabecalho {
-    background-color: var(--cor02);
+   background-color: var(--cor02);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 80px 20px;
     height: 130px;
     width: 100%;
+    
 
 }
 
@@ -92,7 +93,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    background-color: var(--cor02);
+    background-color: var(--cor01);
 
 
 }
@@ -197,4 +198,5 @@
     letter-spacing: 5px;
     text-decoration: none;
     color: #f5f3ec;
+   
 }
